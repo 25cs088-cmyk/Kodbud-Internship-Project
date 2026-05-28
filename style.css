@@ -1,0 +1,43 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+}
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header img{
+    border-radius:50%;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+.card{
+    background:#eee;
+    padding:15px;
+    border-radius:8px;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    padding:10px 20px;
+    background:black;
+    color:white;
+    border:none;
+}
