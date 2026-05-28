@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+
+        body{
+            background:#f4f4f4;
+            font-family:Arial;
+        }
+
+        .form-box{
+            width:350px;
+            background:white;
+            padding:20px;
+            margin:50px auto;
+            border-radius:10px;
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        input,
+        textarea{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:black;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="form-box">
+
+    <form id="myForm">
+
+        <h2>Contact Form</h2>
+
+        <input type="text" id="name" placeholder="Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="phone" placeholder="Phone">
+
+        <textarea id="message" placeholder="Message"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+<script>
+
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        let message = document.getElementById("message").value;
+
+        if(name === "" || email === "" || phone === "" || message === ""){
+            alert("Please fill all fields");
+            return;
+        }
+
+        if(!email.includes("@")){
+            alert("Enter valid email");
+            return;
+        }
+
+        alert("Form Submitted Successfully");
+
+    });
+
+</script>
+
+</body>
+</html>
