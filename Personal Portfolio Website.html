@@ -3,53 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Personal Portfolio</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        header img{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            margin-bottom:15px;
+        }
+
+        section{
+            background:white;
+            margin:20px;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        h2{
+            color:#333;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        .project-card{
+            background:#eee;
+            padding:15px;
+            border-radius:8px;
+            margin-top:10px;
+        }
+
+        form input,
+        form textarea{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        button{
+            padding:10px 20px;
+            background:black;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#444;
+        }
+
+        @media(max-width:768px){
+
+            section{
+                margin:10px;
+            }
+
+        }
+
+    </style>
+
 </head>
 <body>
 
 <header>
-    <img src="https://via.placeholder.com/150" alt="Profile">
+
+    <img src="Photo1.jpeg" width="50" height="150" alt="Profile Picture">
+
     <h1>Jannet Olivia</h1>
-    <p>Web Developer | Student</p>
+
+    <p>Web Developer | Student | Designer</p>
+
 </header>
 
 <section>
+
     <h2>About Me</h2>
-    <p>I am passionate about frontend development and responsive websites.</p>
+
+    <p>
+        I am passionate about creating responsive and modern websites using HTML, CSS, and JavaScript.
+    </p>
+
 </section>
 
 <section>
+
     <h2>Education</h2>
-    <p>Bachelor of Computer Science</p>
+
+    <ul>
+        <li>Bachelor of Computer Science</li>
+        <li>Frontend Web Development Training</li>
+    </ul>
+
 </section>
 
 <section>
+
     <h2>Skills</h2>
+
     <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
+        <li>Bootstrap</li>
     </ul>
+
 </section>
 
 <section>
+
     <h2>Projects</h2>
-    <div class="card">
+
+    <div class="project-card">
+
         <h3>Portfolio Website</h3>
-        <p>Responsive personal website.</p>
+
+        <p>Responsive personal portfolio website using HTML and CSS.</p>
+
     </div>
+
+    <div class="project-card">
+
+        <h3>Landing Page</h3>
+
+        <p>Modern responsive startup landing page design.</p>
+
+    </div>
+
 </section>
 
 <section>
-    <h2>Contact</h2>
+
+    <h2>Contact Me</h2>
 
     <form>
+
         <input type="text" placeholder="Your Name">
+
         <input type="email" placeholder="Your Email">
-        <textarea placeholder="Message"></textarea>
-        <button>Send</button>
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
     </form>
+
 </section>
 
 </body>
